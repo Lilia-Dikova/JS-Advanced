@@ -1,0 +1,42 @@
+// a function method should perform what its name suggests or indicate a problem, any other behaviour is incorrect
+// function that failed to perform what its name suggests should return a special value e.g. undefined, false, -, throw an exception or error
+// exceptions execute unusual execution circumstances, a function unable to do its work, range, type, reference errors
+// types of errors - syntax errors (during parsing), runtime errors - occur during execution (after compilation), logical errors - errors in the logic as the returned result is incorrect (bugs)
+// special values - NaN,
+// exceptions - throw statement allows for the creation of custom errors: throw new Error(""); general, range, type, reference errors (use any instead of Error)
+// try - tests a block of code for errors
+// catch - handles the error
+// try and catch come in pairs
+// try {
+// } catch (exception) {
+// }
+// error instanceof Typerror - check if a given error is from a specific type
+// error - .stack, .name, .message, all errors have these properties
+// throw stops program execution
+// Array.isArray() - checks if something is an array
+// unit test - a peace of code that checks whether a specific functionality works as expected
+// the AAA pattern - arrange, act, and assert
+//
+// MODULES
+// modules - a set of functionalities that are used in a package
+// require() - used to import modules
+// export before function to use it publicly or export {funcName, anotherFunc} after code
+// import { funcName, anotherFunc } from './file.js' to use exported function, . looks in the same folder as the file it was called from
+// import {writeFileSync} from 'fs' - import fabric modules
+// MOCHA - describe, it, describe calls functions, it is to describe tests, high-level order functions
+// CHAI - assertions' library, assert.equal = expect,assertions' libraries provide an easy syntax to check for a given result
+// unit testing approaches - code first, test first
+// beforeAch() - resets data before each test
+// chai - expect, assert, should result.to.eQual();
+// STEPS:
+// HAPPY PATH - is the data input valid, general case
+// ERROR CASES - test all exception cases
+// COMMON EDGE CASES - array start and finish, length
+// LESS-COMMON EDGE CASES
+//
+// assert.isNotOk - expects falsy value, asset.isOk for truthy
+// .equal = "=="
+// .deepEqual = "===" used if need to compare reference types objects, arrays
+// .isUndefined - checks if result is undefined
+// assert.isUndefined(func.sum(num), num)
+// \ escape regex

@@ -1,0 +1,53 @@
+// ... spread operator - creates an array with all values;
+// ... destructs an array;
+
+// for of - iterates elements but only reads them. does not have access to indexes;
+// forEach(el, index, arr) => {
+
+// } - runs a function for each array element. does not return a result. break does not work for it. has access to indexes;
+// arr.map(function) - creates a new array with the results of calling a function on every elements in the calling array;
+// const mapArr = arr.map(element => element) - creates an array copy;
+// const arrObj = arr.map(element => ({name: e})) - creates an object of the array elements;
+
+// let [a, b, ...elms] = arr;
+// arr.pop() - removes back element and returns it;
+// arr.shift() - removes first element and returns it;
+// arr.unshift() - adds elements to start of array and returns new length of array;
+// arr.splice(index, how many elements to delete, how many elements to add) - adds or removes elements from an array, returns a new array. use spread to add an array. changes the original array;
+// arr.toSpliced() - creates array copy without changing the original array;
+// arr.reverse() - reverses array;
+// arr.toReversed() - reversed array copy;
+// arr.fill(valueToBeInserted, startIndex, finishIndex) - fills elements of an array from index to index with a static value;
+// arr.reduce(total(initialValue), currentValue, currentIndex?Optional, sourceArray?Optional) - returns the accumulated result of a function and does not change the original array;
+// arr.reduce(reducer, accumulator);
+// arr.slice(startIndex, finishIndex?optional) - returns a section of a string, does not modify the original array. finishIndex+ isn't inclusive in the result. (+startIndex, -finishIndex) slices backwards, from left to right. (-finishIndex) algorithm starts from finishIndex forward, from right to left;
+
+// arr.sort() - sorts array elements. by default, sorts the values as strings in alphabetical and ascending order, using their ascii table values.
+
+// arr.sort(compareNumber);
+// function compareNumber(a, b) {
+//    return a - b;
+
+// arr.sort((a, b) => a - b); - compare in ascending order, b - a - compare in descending order; modifies array;
+
+// localCompare() - compare strings by alphabetical value;
+// arr.sort(byAlphabet);
+// function byAlphabet(a, b) {
+// return a.localeCompare(b);
+//}
+// arr.sort((a,b) => a.localeCompare(b));
+
+// matrix - create using loops and iterate using nested loops (for rows } for columns } arr[rows][columns] to iterate over all values, vice versa possible);
+// arr[row][column] - access value in matrix;
+
+// arr.join(separator, by default ',');
+// arr.concat(arrays) - glue arrays;
+// [...arr, ...arrNew] - glue arrays, alternative solution;
+// arr.includes() - true/false, checks for a matching element within an array, does not change the original array;
+// arr.IndexOf() - returns the first index at which an element can be found;
+// arr.some() - tests for any elements that respond to the test in the given function. true or false;
+// arr.every() - tests if all elements respond to the test in the given function. true or false;
+// arr.find() - returns the value of the first element that responds to the test in the given function;
+// arr.filter() - new array which has all values that respond to the test in the given function; true or false;
+// arr.flat() - merges all arrays from a matrix;
+// /t tab, prints large spacing

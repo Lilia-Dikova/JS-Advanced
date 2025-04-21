@@ -1,0 +1,66 @@
+// templates for objects
+// data and actions go into classes
+// classes are not hoisted
+// class ClassName {
+// arg - properties defined here;
+// constructor(arg) { // for object initialisation
+// this.argument = arg;
+// to access class counter use ClassName.counter, counter has to be defined as a static method in the class beforehand
+// }
+// };
+//
+// const newClass = new ClassName(arg)
+// newClass();
+// class per file
+// toString() - methods that use default method names become global with special classes
+// valueOf()
+// # - private class properties
+// instanceof - returns true if the given object is an instance of the specified class
+// static - defines a static method for a class, they are part of the class (to access use MyClass.staticMethod()), not attached to thus but to the main class
+// static properties and static methods see each other, they are able to access other static methods within them using this, they are unable to access outside non-static, instance methods
+// accessor properties are methods that mimic values
+// get and set - get allows us to read methods like properties, without (); set - reverse get, duplicate names possible if using get and set, it is possible to preserve it like a value;
+// = calls the setter
+// _ for internal use only
+// use get to calculate a value and return it without changing it, use set to change an instance's property - for validation
+// _ rename value in class if getter and setter have the same name
+//
+// classes in DOM
+// all DOM objects are instances of standard DOM classes
+// const divElement = document.createElement('div');
+// log -> instanceof HTMLDivElement; // true
+// divElement.replaceWith(span) - replace selected element with another
+// before() - insert element before selected node
+// after() - insert element after selected node
+// classList - modify class list, DOMTokenList: add, remove, replace, contains () - tells us whether a given class is set, toggle() - turns off and on, not able to modify text, instead of changing a text on the button, change the button or use replaceWith() but save buttons as references
+// setAttribute() - sets the value of an attribute on the specified HTML element
+// getAttribute() - returns the value of attributes of the specified HTML element
+// someEl.removeAtrribute('') - removes the attribute with the specified name from an HTML element
+// hasAttribute() - method returns true if the specified attribute exists, otherwise it returns false
+// dataset - obtain DOMStringMap of custom data attributes, data in front of every attribute, stores data in the DOM, do not use often, set only strings with kebap case -
+// encapsulate in classes - references to DOM elements, event handlers, methods that manipulate elements
+//
+// COLLECTIONS
+//
+// Map - collections stores its elements in insertion order unlike objects, key value collection, for of for iteration
+// let map = new Map(); - initialise
+// .set(key, value) - adds a new key-value pair
+// .get(key) - returns the value of the given key
+// .size - property holding the number of stored entries
+// .has(key) - checks if the map has the given key
+// .delete(key) - removes a key-value pair
+// .clear() - delete all key-value pairs
+// .entries() - returns iterator, use array from to be able to iterate [key, value]
+// .values() - returns an interator with all of the values, array from to iterate
+// .sort() - array from to be able to sort
+//
+// Set - store unique values of any type, iterable in insertion order
+// let set = new Set([x, y])
+// .add() - add value
+// .has() - checks if the value is present
+//
+// WeakMap and WeakSet - their elements do not count as active references, garbage collector will remove it unless saved, no keys, entries or values
+//
+// _function - for private functions, only needed by classes
+// parseInt() - parse hex numbers
+// toString(str, decimal point) - to hex

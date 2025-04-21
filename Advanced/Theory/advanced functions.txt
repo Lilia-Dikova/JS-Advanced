@@ -1,0 +1,50 @@
+// ADVANCED FUNCTIONS
+//
+// function context = this object
+//
+// global invoke:func()
+// object method:object.function()
+// DOM event:element.addEventListener()
+//
+// using call(), apply(), bind() allow us to choose the function context
+//
+// this retains the value of the enclosing lexical context
+// arrow functions have no context, this points to the object where the function was created
+//
+// functionName.call(myObj) - functionName(myObj, param, param);
+// functionName.apply(myObj) - functionName(myObj, [param, param]);
+// turn functions with limited applications to multifunctions - functionName.apply(myObj) - functionName(null, [param, param])
+//
+// bind() - binds a copy of the original function, creates a package
+// const boundFn = functionName.bind(myObj), to call use boundFn(); functionName.bind(myObj, param, param)
+// call and apply call the function immediately, while bind allows us to call the function at any given time
+// it is not possible to change the context of an arrow function
+// .map(el => ( {
+// for every el
+// }));
+//
+// first-class functions - just a value, can be treated like it; a function that can go anywhere that any other value can go; returned by another function; assign as a value to a variable; can be returned by another function;
+// higher-order functions - they take other functions as an argument or return a function as a result
+// predicates - function which returns true or false; .filter(), .find(), .findIndex()
+// built-in higher order functions - .map(), reduce(), filter()
+// PURE FUNCTIONS - return the same result if given the same parameters
+// referential transparency - an expression that can be replaced with its corresponding value without changing the program's behavior; expression is pure and its evaluation must have no side effects
+//
+// closure - the data uploaded to the heap memory, so the processor (stack) can access them
+// garbage collector - checks for data in the heap memory that isn't visible in the stack and deletes it
+// this - this is for delegations
+// the scope of the inner functions "sees" the scope of the outer function
+// the inner functions retains variables used from the outer function scope even after the outer function has returned
+// IIFE - immediately-invoked function expressions - (function(){})(), partial application
+//
+// function decoration - take a function and add more behaviours to it
+// partial application - fix a portion of a function's arguments without invoking it; it can be used multiple times; retains all fixed arguments regardless of their content
+// currying - function decomposition, parameters are also part of the closure; used for function composition too; memoization - a technique to save the result of a function execution, so upon subsequent calls it is not necessary to execute the entire code again; error handling
+// currying vs partial application - currying always produces unary functions, while partial application produces functions of X number of arguments; currying is not partial application, but it can be implemented using it
+// call and apply change the context only for the specific call, while bind changes the context permanently and saves the function in the said context as a variable for further use
+// Object.assign({}, anotherObj) - copies an object, it has own values
+// Object.create() - creates a prototype, the properties and values still belong to the object the new object was copied from
+// DOM FORM - .addEventListener('submit', function), add event.preventDefault(); to function(event) - stops rerendering
+// event.target.elements - get elements
+// .innerText - innerHTML text
+// .children - returns a collection of all elements (inputs, labels etc), while .elements returns input from forms;

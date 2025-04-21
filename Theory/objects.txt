@@ -1,0 +1,46 @@
+// for in - iterates all object properties
+// in - checks for property up in the prototype chain
+
+// properties are key-value pairs;
+// object methods are functions built into objects
+
+// objName[prop] - check value of a given key
+// associative array is a collection of data, while object stores specific data. they are the same but have different implementations
+
+// Object.keys(object reference) - returns an array of object keys
+// Object.values(object reference) - returns an array of values
+// Object.entries(object reference)- returns a nested array of keys and values
+// Object.fromEntries(entries) - returns an object from entries
+// obj.hasOwnProperty(prop) - true or false, checks if property exists
+// Object.assign({}, ...) - copy the objects on the right and add them to a new object
+
+// it is not possible to sort objects
+// tokenisation, splitting a collection of data into pieces, array.split('')
+
+// this - points to current instance, in most cases points to the value on the left side from the dot
+// { } = objectName - destructuring an object
+// access nested object -
+// let someObj = {
+//  name : 'Something',
+//  language: { france: 'French', japan: 'Japanese'}
+// }
+// someObj.language.france
+// let lang = someObj.language
+// let langJap = lang.japan
+
+// object composition - combining simple objects into complex objects
+// factory functions compose and return objects, no this needed
+// OOP functions - encapsulation, abstraction, inheritance, polymorphism
+// dectorator functions - add data and behaviour to objects
+// () forces the function inside the original object to execute, no () takes the actual function
+
+// JSON - data interchange format, methods are automatically dropped, the same applies for undefined. it is self-describing and language independent. null is accepted
+// JSON.parse() - turns into manipulative object
+// JSON.stringify() - turns into string
+
+// set inital values of object keys to null if no values yet
+// new Array(length).fill(value) - fills an array with given values
+// .filter(x=>!!x)) - filters all empty spaces
+// arrow functions have no ctxt
+// add function to object - functionName: function () {}
+// isNaN - true false, returns non Numbers || if typeOf el !== 'number'

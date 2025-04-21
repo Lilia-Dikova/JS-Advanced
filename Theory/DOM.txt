@@ -1,0 +1,50 @@
+// alert() - modal popup
+// <script src=""></script> - load script from external file
+
+// .innerHTML - allows us to interpret HTML, security risk
+// .textContent - allows us to view and change element text
+// .value - string properties of input elements, input and textarea have value
+// .style - colors, size etc
+
+//.split().join() - search and replace
+
+// execute JS in browser options - attribute event, inline script, browser console, load via external file
+
+// DOCUMENT SELECTORS:
+
+// HTML Selectors
+
+// .getElementById('') - by ID
+// .getElementsByClassName('') - by class name, returns a collection of elements, indexable by element
+// .getElementsByTagName('') - selects by tag
+
+// .querySelector('') - returns first match, if no match = null, returns NodeList
+// .querySelectorAll('') - returns a collection of all matches, if no match = empty collection, which is truthy. best check by length or use querySelector(''). returns NodeList but without the whitespaces, all other except for it and querySelector() return HTMLCollections
+// the same ^ applies for getElement(s)
+// use '#' instead of '' to match by unique ID
+// use '.' instead of '' to match by class
+// use '[]' to match by attribute instead of class or ID
+// '..' - finds element that has multiple classes, empty space is for nested element
+// '.>.' - searches only in outer layer
+// '.,.' - to match elements that have any of the classes
+
+// through DOM iteration
+
+// NodeList - can contain any node type, including text and whitespace
+// HTMLCollection - contains only Element nodes
+// both have iteration methods, HTMLCollection has an extra method namedItem
+// HTMLCollection is live, while NodeList can be either static or live
+
+// in order to iterate a NodeList, turn collection into an array - Array.from(collection) or using spread operator [...elements], for HTMLCollection is it not necessary
+// to use array methods, always turn into array
+
+// value - set new value, input
+
+// element.style.display = 'none'; - hides an element
+// target row, column, list item etc - by index or with a CSS selector
+// element.style.background - change background color
+// background-color - same
+// element.style.textDecoration = "bold", "normal" etc
+// element.classList.add('') - adds a class;
+// element.classList.remove('') - removes a class;
+// substring(num) - cuts from num letter, for string
